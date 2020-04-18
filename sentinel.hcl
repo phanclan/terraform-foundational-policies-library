@@ -69,3 +69,68 @@ policy "azure-cis-7.4-compute-only-approved-extensions-are-installed" {
 source = "https://raw.githubusercontent.com/hashicorp/terraform-foundational-policies-library/master/cis/azure/compute/azure-cis-7.4-compute-only-approved-extensions-are-installed/azure-cis-7.4-compute-only-approved-extensions-are-installed.sentinel"
 enforcement_level = "advisory"
 }
+
+# GCP - COMPUTE
+## CIS 4.2: Ensure "Block Project-wide SSH keys" enabled for VM instances
+policy "gcp-cis-4.2-compute-block-project-wide-ssh-keys-enabled-for-vm-instances" {
+    source = "https://raw.githubusercontent.com/hashicorp/terraform-foundational-policies-library/master/cis/gcp/compute/gcp-cis-4.2-compute-block-project-wide-ssh-keys-enabled-for-vm-instances/gcp-cis-4.2-compute-block-project-wide-ssh-keys-enabled-for-vm-instances.sentinel"
+    enforcement_level = "advisory"
+}
+## CIS 4.3: Ensure oslogin is enabled for a Project
+policy "gcp-cis-4.3-compute-ensure-oslogin-is-enabled-for-a-project" {
+    source = "https://raw.githubusercontent.com/hashicorp/terraform-foundational-policies-library/master/cis/gcp/compute/gcp-cis-4.3-compute-ensure-oslogin-is-enabled-for-a-project/gcp-cis-4.3-compute-ensure-oslogin-is-enabled-for-a-project.sentinel"
+    enforcement_level = "advisory"
+}
+## CIS 4.4: Ensure 'Enable connecting to serial ports' is not enabled for VM Instance
+policy "gcp-cis-4.4-compute-enable-connecting-to-serial-ports-is-not-enabled-for-vm-instance" {
+    source = "https://raw.githubusercontent.com/hashicorp/terraform-foundational-policies-library/master/cis/gcp/compute/gcp-cis-4.4-compute-enable-connecting-to-serial-ports-is-not-enabled-for-vm-instance/gcp-cis-4.4-compute-enable-connecting-to-serial-ports-is-not-enabled-for-vm-instance.sentinel"
+    enforcement_level = "advisory"
+}
+## CIS 4.5: Ensure that IP forwarding is not enabled on Instances
+policy "gcp-cis-4.5-compute-ensure-that-ip-forwarding-is-not-enabled-on-instances" {
+    source = "https://raw.githubusercontent.com/hashicorp/terraform-foundational-policies-library/master/cis/gcp/compute/gcp-cis-4.5-compute-ensure-that-ip-forwarding-is-not-enabled-on-instances/gcp-cis-4.5-compute-ensure-that-ip-forwarding-is-not-enabled-on-instances.sentinel"
+    enforcement_level = "advisory"
+}
+## CIS 4.6: Ensure VM disks for critical VMs are encrypted with Customer- Supplied Encryption Keys (CSEK)
+policy "gcp-cis-4.6-compute-ensure-vm-disks-for-critical-vms-are-encrypted-with-customer-supplied-encryption-keys" {
+    source = "https://raw.githubusercontent.com/hashicorp/terraform-foundational-policies-library/master/cis/gcp/compute/gcp-cis-4.6-compute-ensure-vm-disks-for-critical-vms-are-encrypted-with-customer-supplied-encryption-keys/gcp-cis-4.6-compute-ensure-vm-disks-for-critical-vms-are-encrypted-with-customer-supplied-encryption-keys.sentinel"
+    enforcement_level = "advisory"
+}
+
+# GCP - DATABASES
+## CIS 6.1: Ensure that Cloud SQL database instance requires all incoming connections to use SSL
+policy "gcp-cis-6.1-databases-cloud-sql-databases-instance-requires-all-incoming-connections-to-use-ssl" {
+    source = "https://raw.githubusercontent.com/hashicorp/terraform-foundational-policies-library/master/cis/gcp/databases/gcp-cis-6.1-databases-cloud-sql-databases-instance-requires-all-incoming-connections-to-use-ssl/gcp-cis-6.1-databases-cloud-sql-databases-instance-requires-all-incoming-connections-to-use-ssl.sentinel"
+    enforcement_level = "advisory"
+}
+## CIS 6.2: Ensure that Cloud SQL database Instances are not open to the world
+policy "gcp-cis-6.2-databases-cloud-sql-databases-instances-are-not-open-to-the-world" {
+    source = "https://raw.githubusercontent.com/hashicorp/terraform-foundational-policies-library/master/cis/gcp/databases/gcp-cis-6.2-databases-cloud-sql-databases-instances-are-not-open-to-the-world/gcp-cis-6.2-databases-cloud-sql-databases-instances-are-not-open-to-the-world.sentinel"
+    enforcement_level = "advisory"
+}
+
+# GCP - KUBERNETES
+## CIS 7.1: Ensure Stackdriver Logging is set to Enabled on Kubernetes Engine Clusters
+policy "gcp-cis-7.1-kubernetes-ensure-stackdriver-logging-is-set-to-enabled-on-kubernetes-engine-clusters" {
+    source = "https://raw.githubusercontent.com/hashicorp/terraform-foundational-policies-library/master/cis/gcp/kubernetes/gcp-cis-7.1-kubernetes-ensure-stackdriver-logging-is-set-to-enabled-on-kubernetes-engine-clusters/gcp-cis-7.1-kubernetes-ensure-stackdriver-logging-is-set-to-enabled-on-kubernetes-engine-clusters.sentinel"
+    enforcement_level = "advisory"
+}
+
+## CIS 7.2: Ensure Stackdriver Monitoring is set to Enabled on Kubernetes Engine Clusters
+## CIS 7.3: Ensure Legacy Authorization is set to Disabled on Kubernetes Engine Clusters
+## CIS 7.4: Ensure Master authorized networks is set to Enabled on Kubernetes Engine Clusters
+## CIS 7.5: Ensure Kubernetes Clusters are configured with Labels
+## CIS 7.7: Ensure Automatic node repair is enabled for Kubernetes Clusters
+## CIS 7.8: Ensure Automatic node upgrades is enabled on Kubernetes Engine Clusters nodes
+## CIS 7.9: Ensure Container-Optimized OS (cos) is used for Kubernetes Engine Clusters Node image
+## CIS 7.10: Ensure Basic Authentication is disabled on Kubernetes Engine Clusters
+## CIS 7.11: Ensure Network policy is enabled on Kubernetes Engine Clusters
+## CIS 7.12: Ensure Kubernetes Cluster is created with Client Certificate enabled
+## CIS 7.13: Ensure Kubernetes Cluster is created with Alias IP ranges enabled
+## CIS 7.14: Ensure PodSecurityPolicy controller is enabled on the Kubernetes Engine Clusters
+## CIS 7.15: Ensure Kubernetes Cluster is created with Private cluster enabled
+## CIS 7.17: Ensure default Service account is not used for Project access in Kubernetes Clusters
+## CIS 7.18: Ensure Kubernetes Clusters created with limited service account Access scopes for Project access
+
+
+
