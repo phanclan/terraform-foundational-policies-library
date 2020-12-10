@@ -1,10 +1,14 @@
 name: sentinel
-on: [push]
+on:
+  push:
+  pull_request:
+    branches:
+      - master
 jobs:
   sentinel-format:
     runs-on: ubuntu-latest
     container:
-      image: thrashr888/sentinel-simulator
+      image: hashicorp/sentinel
     steps:
       - name: Checkout
         uses: actions/checkout@v2
@@ -14,7 +18,7 @@ jobs:
     needs: sentinel-format
     runs-on: ubuntu-latest
     container:
-      image: thrashr888/sentinel-simulator
+      image: hashicorp/sentinel
     steps:
       - name: Checkout
         uses: actions/checkout@v2
